@@ -1,0 +1,9 @@
+<van-tabs border="{{ false }}"
+    line-width="15" 
+    line-height="2" style="top:{{ 0 }}px" 
+    swipe-threshold="6" 
+    tab-active-class="active" 
+    active="{{ activeIndex }}"
+    bind:click="changeTab">
+    <van-tab wx:for="{{ tabs }}" title="{{item[label] || item[defaultName]}}" name="{{ item[key] || item[defaultKey] }}" wx:key="index"></van-tab>
+</van-tabs>

@@ -1,0 +1,7 @@
+<view>
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号码</button>
+  <button bindtap="getUserLocation">获取定位</button>
+  <button bindtap="getLocation">获取位置授权</button>
+  <button bindtap="login">登录</button>
+  
+</view>

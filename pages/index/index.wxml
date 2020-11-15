@@ -1,0 +1,28 @@
+<!-- <scroll-view scroll-x="true" class="weui-navbar">
+  <block wx:for-items="{{tabs}}">
+    <view 
+      id="{{index}}" 
+      class="{{activeIndex == index ?'item_on':''}} default-item" 
+      bindtap="tabClick" 
+      style="width:{{tabW}}px">
+    {{item.name}}
+    </view>
+  </block>
+  <view class="weui-navbar-slider" style="transform:translateX({{slideOffset}}px);"></view>
+</scroll-view> -->
+
+<nav-tabs tabs="{{tabs}}" label="{{'names'}}" activeIndex="{{activeIndex}}" bind:handleClick="changeTab"/>
+
+<swiper current="{{activeIndex}}" class="swiper-box" duration="500" bindchange="bindChange" style="height: {{contentHeight}}px">
+  <swiper-item class="swiper-item" wx:for="{{tabs}}" wx:key="index">
+  <view>{{activeIndex}}</view>
+    <!-- <view>
+      <van-button type="primary">主要按钮</van-button>
+    </view> -->
+    <!-- <view wx:if="{{index === 1}}">2</view>
+    <view wx:if="{{index === 2}}">4</view>
+    <view wx:if="{{index === 3}}">5</view>
+    <view wx:if="{{index === 4}}">6</view> -->
+    
+  </swiper-item>
+</swiper>
