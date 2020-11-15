@@ -22,13 +22,13 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-    "packNpmManually": true,
-    "packNpmRelationList": [
-      {
-        "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./miniprogram/"
-      }
-    ]
+		"packNpmManually": true,
+		"packNpmRelationList": [
+			{
+				"packageJsonPath": "./package.json",
+				"miniprogramNpmDistDir": "./miniprogram/"
+			}
+		]
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.14.0",
