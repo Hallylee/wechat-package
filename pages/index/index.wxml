@@ -15,14 +15,13 @@
 
 <swiper current="{{activeIndex}}" class="swiper-box" duration="500" bindchange="bindChange" style="height: {{contentHeight}}px">
   <swiper-item class="swiper-item" wx:for="{{tabs}}" wx:key="index">
-  <view>{{activeIndex}}</view>
-    <!-- <view>
-      <van-button type="primary">主要按钮</van-button>
-    </view> -->
-    <!-- <view wx:if="{{index === 1}}">2</view>
-    <view wx:if="{{index === 2}}">4</view>
-    <view wx:if="{{index === 3}}">5</view>
-    <view wx:if="{{index === 4}}">6</view> -->
+    <view>
+      <van-button type="primary" bindtap="clickContent">跳转授权页</van-button>
+    </view>
+    <view wx:if="{{index === 0}}">第一页</view>
+    <view wx:if="{{index === 1}}">第二页</view>
+    <view wx:if="{{index === 2}}">第三页</view>
+    <view wx:if="{{index === 3}}">第四页</view>
     
   </swiper-item>
 </swiper>
